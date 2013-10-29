@@ -1,0 +1,20 @@
+{
+  "name": "chartbeat/jchartbeat",
+  "version": "1.0.0",
+  "homepage": "http://chartbeat.com/labs/",
+  "authors": [
+    "mattbango <mattbango@gmail.com>"
+  ],
+  "description": "A simple and lightweight jQuery plugin for the Chartbeat API",
+  "keywords": [
+    "chartbeat"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
