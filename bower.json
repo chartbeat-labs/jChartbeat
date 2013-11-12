@@ -1,7 +1,7 @@
 {
   "name": "chartbeat/jchartbeat",
   "version": "1.0.0",
-  "homepage": "http://chartbeat.com/labs/",
+  "homepage": "https://github.com/chartbeat-labs/jChartbeat",
   "authors": [
     "mattbango <mattbango@gmail.com>"
   ],
@@ -11,10 +11,6 @@
   ],
   "license": "Apache-2.0",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "examples"
   ]
 }
