@@ -19,15 +19,14 @@
         $.jChartbeat({apikey: 'YOUR_API_KEY', host: 'YOUR_DOMAIN'});
 
         // It's simple to call methods and get the response using an anonymous callback method.
-        $.jChartbeat.toppages(function(response) {
+        $.jChartbeat.liveQuickstats(function(response) {
             // Do stuff with the response object
             console.log(response);
         });
 
-        // Passing in options as an object
-        $.jChartbeat.snapshots(function(response) {
+        $.jChartbeat.toppages(function(response) {
             console.log(response);
-        }, {timestamp: 1289519661});
+        });
     });
     </script>
 </body>

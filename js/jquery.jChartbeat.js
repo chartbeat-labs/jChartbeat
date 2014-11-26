@@ -63,6 +63,12 @@
    $.jChartbeat.historicalBaseUrl = 'http://chartbeat.com/dashapi';
 
    /**
+    * The base url that is prepended to all API requests
+    * @type {string}
+    */
+   $.jChartbeat.apiBaseUrl = 'http://api.chartbeat.com';
+
+   /**
     * Paths to different API's
     * @type {Object}
     */
@@ -78,7 +84,8 @@
          snapshots:     '/snapshots/',
          stats:         '/stats/',
          summary:       '/summary/',
-         topPages:      '/toppages/'
+         topPages:      '/toppages/',
+         liveQuickstats: '/live/quickstats/v3'
     };
 
 
@@ -173,6 +180,17 @@
       */
      $.jChartbeat.quickstats = function (callback, params) {
        var request = $.jChartbeat.realTimeBaseUrl + $.jChartbeat.paths.quickstats;
+       makeRequest(request, callback, params);
+     };
+
+     /**
+      * Live quickstats API call (Real-time)
+      * @see http://chartbeat.pbworks.com/quickstats
+      * @param {function():Object} callback  Function to be called once the request has completed successfully.
+      * @param {Object=} params  { 'path': '/custom/path/' } (OPTIONAL)
+      */
+     $.jChartbeat.liveQuickstats = function (callback, params) {
+       var request = $.jChartbeat.apiBaseUrl + $.jChartbeat.paths.liveQuickstats;
        makeRequest(request, callback, params);
      };
 
